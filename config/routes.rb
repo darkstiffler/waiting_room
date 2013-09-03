@@ -1,5 +1,11 @@
 WaitingRoom::Application.routes.draw do
 
+  get "doctor/index"
+  get "doctor/show"
+  get "doctor/new"
+  get "doctor/create"
+  get "doctor/update"
+  get "doctor/delete"
   get "user/index"
   get "user/show"
   get "user/new"
