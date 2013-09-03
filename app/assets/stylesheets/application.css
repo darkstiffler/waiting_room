@@ -11,3 +11,11 @@
  *= require_self
  *= require_tree .
  */
+
+
+
+footer {
+	position: absolute;
+	bottom: 2px;
+	left: 20px;
+}
