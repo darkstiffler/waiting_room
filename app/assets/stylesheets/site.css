@@ -1,9 +1,12 @@
-#login_img {
+#welcome_img {
 	height: 250px;
 	width: auto;
 	margin: 0 auto;
 }
-#login {
+#welcome {
 	display: block;
 	text-align: center;
+}
+button {
+	box-shadow: 4px 4px 5px grey;
 }

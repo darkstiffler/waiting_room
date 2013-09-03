@@ -7,7 +7,7 @@ WaitingRoom::Application.routes.draw do
   get "user/update"
   get "user/edit"
   get "user/delete"
-  get "/login" => 'site#login'
+  get "/welcome" => 'site#welcome'
 
-  root 'site#login'
+  root 'site#welcome'
 end
