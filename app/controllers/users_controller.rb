@@ -1,14 +1,19 @@
 class UsersController < ApplicationController
+
   def index
+    @users = User.all
   end
 
   def show
   end
 
   def new
+    @user = User.new
   end
 
   def create
+    @user = User.create! user_params
+    redirect_to welcome_path
   end
 
   def update
@@ -20,7 +25,8 @@ class UsersController < ApplicationController
   def delete
   end
 
-  def login
+  def user_params
+    params.require(:user).permit(:name, :age, :location)
   end
   
 end
