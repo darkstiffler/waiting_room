@@ -2,20 +2,9 @@ WaitingRoom::Application.routes.draw do
 
   root 'site#welcome'
 
-  get "doctor/index"
-  get "doctor/show"
-  get "doctor/new"
-  get "doctor/create"
-  get "doctor/update"
-  get "doctor/destroy"
+  resource :doctors
 
-  get "user/index"
-  get "user/show"
-  get "user/new"
-  get "user/create"
-  get "user/update"
-  get "user/edit"
-  get "user/destory"
+  resource :users
 
   get "/welcome" => 'site#welcome'
 

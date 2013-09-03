@@ -1,0 +1,17 @@
+
+<div id="new_doc" class="col-sm-12">
+	<h3>Welcome Doc, before i let you answer anyones questions... I need to make sure you are really a doctor first! So please, fill in the info below!</h3>
+	<%= form_for @doctor do |f| %>
+		<div class="row">
+				<%= f.text_field :name, placeholder:'Full Name' %>
+				<br>
+				<%= f.text_field :age, placeholder:'Age' %>
+				<br>
+				<%= f.text_field :location, placeholder:'Location' %>
+				<br>
+				<%= f.text_field :licence, placeholder:'Your med Licence #' %>
+				<br>
+				<br>
+				<%= f.submit %>
+		</div>
+	<% end %>

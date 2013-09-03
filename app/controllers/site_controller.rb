@@ -6,8 +6,4 @@ class SiteController < ApplicationController
 	def welcome
 	end
 
-	def login
-	end
-	
-
 end
