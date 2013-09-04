@@ -3,14 +3,13 @@ WaitingRoom::Application.routes.draw do
 
   root 'site#welcome'
 
-  resource :doctors
+  resources :doctors
 
-  resource :users
+  resources :users
 
-  resource :questions
-  get "/qindex" => 'questions#index', as: "qindex"
+  resources :questions
 
-  resource :answers
+  resources :answers
 
   get "/welcome" => 'site#welcome'
 
