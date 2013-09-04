@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create! user_params
-    redirect_to new_questions_path
+    redirect_to new_question_path
   end
 
   def update
