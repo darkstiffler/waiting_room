@@ -8,6 +8,7 @@ WaitingRoom::Application.routes.draw do
   resource :users
 
   resource :questions
+  get "/qindex" => 'questions#index', as: "qindex"
 
   resource :answers
 

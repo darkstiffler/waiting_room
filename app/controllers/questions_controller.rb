@@ -4,23 +4,25 @@ class QuestionsController < ApplicationController
     @questions = Question.all
   end
 
-  def show
-    @question = Quesstion.find params[:id]
-  end
-
   def new
     @question = Question.new
   end
 
   def create
     @question = Question.create question_params
-    redirect_to questions_path
+    redirect_to qindex_path
+  end
+
+  def show
   end
 
   def update
   end
 
   def destroy
+    @question = Question.find[:id]
+    question.destroy
+    redirect_to questions_path
   end
 
   def edit

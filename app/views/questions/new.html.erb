@@ -1,1 +1,15 @@
-new q
+<div id="new_q">	
+	<%= form_for @question do |f| %>
+	<h2>Please, dont hesitate to ask!</h2>
+	<h4>Remember, nobody knows who you are!<br> this site is anonymous!</h4>
+	<br>
+	<%= f.label :subject %>
+	<%= f.text_field :title %>
+	<br>
+	<%= f.label :message %>
+	<%= f.text_field :body %>
+	<br>
+	<br>
+	<%= f.submit %>
+	<% end %>
+</div>
