@@ -6,7 +6,8 @@ class AnswersController < ApplicationController
 	end
 
 	def create
-		
+		answer = Answer.create params.require(:answer).permit(:message, :question_id)
+		redirect_to question_path(answer.question)
 	end
 
 	def new

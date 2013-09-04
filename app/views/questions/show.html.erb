@@ -9,5 +9,6 @@
 <%= form_for @question.answers.new do |f| %>
 <%= f.label :answer %>
 <%= f.text_field :message %>
+<%= f.hidden_field :question_id %>
 <%= f.submit :Submit, class: "btn btn-md btn-primary" %>
 <% end %>
