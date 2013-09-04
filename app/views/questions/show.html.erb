@@ -1,4 +1,13 @@
 <h1>Title: <%= @question.title %></h1>
 <h3>Message: <%= @question.body %></h3>
 
-<%= link_to "Answer", new_answer_path %>
+<% @question.answers.each do |answer| %>
+<p><%= answer.message %></p>
+<% end %>
+<br>
+<br>
+<%= form_for @question.answers.new do |f| %>
+<%= f.label :answer %>
+<%= f.text_field :message %>
+<%= f.submit %>
+<% end %>
