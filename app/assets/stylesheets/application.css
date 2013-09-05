@@ -17,6 +17,9 @@ body {
 	background-image: url(http://www.clker.com/cliparts/9/3/c/2/1195424055679579296stethoscope_eric_maeker_01.svg.med.png);
 	background-size: 130px;
 }
+.answer {
+	border: 2px solid red;
+}
 footer {
 	position: fixed;
 	background-color: black;
@@ -31,9 +34,17 @@ footer {
 .box {
 	display: block;
 	padding: 10px;
-	background: black;
+	background: rgba(0,0,0,.9);
 	color: white;
-	box-shadow: 5px 5px 10px grey;
+	box-shadow: 5px 5px 10px black;
 	border-radius: 10px;
-	margin:0 auto;
+	margin: 30px;
+}
+#top_bar {
+	border-radius: 0 0 5px 0;
+	padding: 5px;
+	height: 60px;
+	background-color: black;
+	width: 90%;
+	margin-bottom: 20px;
 }
