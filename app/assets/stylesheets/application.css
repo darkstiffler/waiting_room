@@ -13,9 +13,22 @@
  */
 
 
-
+html {
+	background-image: url(http://www.clker.com/cliparts/9/3/c/2/1195424055679579296stethoscope_eric_maeker_01.svg.med.png);
+	background-size: 130px;
+}
 footer {
 	position: fixed;
 	bottom: 2px;
 	left: 20px;
+}
+
+.box {
+	display: block;
+	padding: 10px;
+	background: black;
+	color: white;
+	box-shadow: 5px 5px 10px grey;
+	border-radius: 10px;
+	margin:0 auto;
 }

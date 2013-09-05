@@ -1,4 +1,5 @@
 class AnswersController < ApplicationController
+
 	def index
 	end
 
@@ -6,7 +7,7 @@ class AnswersController < ApplicationController
 	end
 
 	def create
-		answer = Answer.create params.require(:answer).permit(:message, :question_id)
+		answer = Answer.create answer_params
 		redirect_to question_path(answer.question)
 	end
 
@@ -18,5 +19,10 @@ class AnswersController < ApplicationController
 
 	def destroy
 	end
+
+	def answer_params
+		params.require(:answer).permit(:message, :question_id)
+	end
+
 
 end
