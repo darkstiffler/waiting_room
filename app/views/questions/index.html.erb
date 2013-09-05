@@ -1,13 +1,14 @@
-<h1>Questions Board</h1>
+<div id="q_board">	
+	<h1>The Questions Board</h1>
 
-<% @questions.each do |q| %>
-Title: <%= q.title %>
-<br>
-Body: <%= q.body %>
-<br>
-<%= link_to "View or Answer this question!", q, class: "btn btn-xs btn-primary" %>
-<br>
-<br>
-<% end %>
-
+	<% @questions.each do |q| %>
+	Title: <%= q.title %>
+	<br>
+	Body: <%= q.body %>
+	<br>
+	<%= link_to "View or Answer this question!", q, class: "btn btn-xs btn-primary" %>
+	<br>
+	<br>
+	<% end %>
+</div>
 	
