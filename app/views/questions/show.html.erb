@@ -2,11 +2,11 @@
 	<h1>Title: <%= @question.title %></h1>
 	<h3>Message: <br><%= @question.body %></h3>
 
-	<h1>Answers </h1>
+	<h1>Answers Below </h1>
 
 	<% @question.answers.each do |answer| %>
 	<p><%= answer.message %></p>
-	<%= @created %>
+	<p style="color: green">Answered <%= time_ago_in_words answer.created_at %> ago.</p>
 	=======================
 	<% end %>
 	<br><br>
