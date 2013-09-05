@@ -14,7 +14,7 @@ class DoctorsController < ApplicationController
 
   def create
     @doctor = Doctor.create doctor_params
-    redirect_to welcome_path
+    redirect_to questions_path
   end
 
   def update

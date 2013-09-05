@@ -48,6 +48,10 @@ ActiveRecord::Schema.define(version: 20130904211501) do
     t.string   "name"
     t.integer  "age"
     t.string   "location"
+    t.string   "salt"
+    t.string   "fish"
+    t.string   "code"
+    t.datetime "expires_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

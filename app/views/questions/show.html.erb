@@ -2,9 +2,10 @@
 	<h1>Title: <%= @question.title %></h1>
 	<h3>Message: <br><%= @question.body %></h3>
 
-	<h1>Answers Below </h1>
+	<h1>Replies Below </h1>
 
 	<% @question.answers.each do |answer| %>
+	<p style="text-decoration: underline">From Nickname: <%= answer.from %></p>
 	<p><%= answer.message %></p>
 	<p style="color: green">Answered <%= time_ago_in_words answer.created_at %> ago.</p>
 	=======================
@@ -16,6 +17,10 @@
 	<%= f.label :answer %>
 	<%= f.text_field :message %>
 	<%= f.hidden_field :question_id %>
+	<br>
+	<%= f.label :from %>
+	<%= f.text_field :from %>
+	<br>
 	<%= f.submit :Submit, class: "btn btn-md btn-primary" %>
 	<% end %>
 	<br><br><br>
