@@ -1,10 +1,10 @@
-<div id="q_board" class="box">	
+<div class="box">	
 	<h1>The Questions Board</h1>
 	<div id="questions">
 		<% @questions.each do |q| %>
-		Title: <%= q.title %>
+		<h4><%= q.title %></h4>
 		<br>
-		Body: <%= q.body %>
+		<h5><%= q.body %></h5>
 		<br>
 		<%= link_to "View or Answer this question!", q, class: "btn btn-xs btn-primary" %>
 		<br>
