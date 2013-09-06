@@ -9,8 +9,15 @@
 <body>
 <div id="top_bar">
 	<h3 class="pull-left"><a href="/">The Waiting Room</h3>
-	<h3 class="pull-right"><a href="/docs/new">Doc Signup</a>,
-		<a href="/sessions/new">Doc Log in</a></h3>
+	<div class="pull-right">
+		<% if current_doc %>
+ 			Logged in as <%= current_doc.name %>.<br>
+  	<%= link_to "Log Out", logout_path %>
+	<% else %>
+	  <%= link_to "Sign Up", signup_path %> or
+	  <%= link_to "Log In", login_path %>
+	<% end %>
+	</div>
 </div>
 
 <%= yield %>
