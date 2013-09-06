@@ -10,7 +10,7 @@
 	<p>
 	<%= answer.message %></p>
 	<% if answer.doc && answer.doc.verified %>
-	<span><img style="height:17px;width:auto;border-radius: 2px;"src="/assets/star.png"> Verified Doctor.</span>
+	<span><img style="height:17px;width:auto;border-radius: 2px;" src="/assets/star.png"> Verified Doctor.</span>
 	<% else %>
 	<span style="color:red">This answer is from an UNVERIFIED source.</span>
 	<% end %>
@@ -32,7 +32,7 @@
 	</div><br>
 	<%= f.submit :Submit, class: "btn btn-md btn-primary" %>
 		<% if current_doc %>
-		<h4>You are a Verified Doctor.</h4>
+		<h4>You are a Verified Doctor <br><br><span><img style="height:40px;width:auto;border-radius: 5px;"src="/assets/star.png"</span></h4> Your posts will contain the above symbol.
 		<% else %>
 		<h4>You are not Verified yet.</h4>
 		<h5><%= link_to "Sign up as a doc!", new_doc_path %></h5>
