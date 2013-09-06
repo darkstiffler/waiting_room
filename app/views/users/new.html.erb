@@ -1,6 +1,6 @@
 <div id="new_patient" class="col-sm-12">
-	<h1>Patient!</h1>
-	<h3>Welcome, before i let you ask some questions... We need to be able to call you "something"! So please, fill in the info below however you like.</h3>
+	<h3>Hello new Patient</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, assumenda, repellendus officia quis voluptates delectus fuga dicta dignissimos nemo atque incidunt id earum ut quidem iusto adipisci omnis ipsa beatae.</p>
 
 	<%= form_for @user do |f| %>
 		<div class="row">
@@ -11,6 +11,6 @@
 				<%= f.text_field :location, placeholder:'Location' %>
 				<br>
 				<br>
-				<%= f.submit %>
+				<%= f.submit class:"btn btn-sm btn-primary" %>
 		</div>
 	<% end %>

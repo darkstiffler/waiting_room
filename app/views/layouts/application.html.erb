@@ -13,7 +13,7 @@
 <div class="pull-right menu">
 	<h4>Doctors Area</h4>
 	<% if current_doc %>
-			Welcome Dr. <%= current_doc.name %>.<br>
+			Welcome Dr. <%= current_doc.name %>!<br>
 	<%= link_to "Log Out", logout_path %>
 <% else %>
   <%= link_to "Sign Up", signup_path %> or
