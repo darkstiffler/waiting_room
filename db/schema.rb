@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20130905232246) do
   create_table "docs", force: true do |t|
     t.string   "name"
     t.string   "licence"
-    t.boolean  "verified",        default: false
+    t.boolean  "verified",        default: true
     t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"

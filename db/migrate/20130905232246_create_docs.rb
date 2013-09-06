@@ -1,9 +1,10 @@
 class CreateDocs < ActiveRecord::Migration
   def change
     create_table :docs do |t|
+
       t.string :name
       t.string :licence
-      t.boolean :verified, default: false
+      t.boolean :verified, default: true
       t.string :password_digest
 
       t.timestamps
