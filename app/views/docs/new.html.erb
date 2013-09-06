@@ -1,6 +1,7 @@
  <div class="box"> 
   <h1>Doc Sign Up</h1>
-  We are very strict about our Doctor sign up.  So we do not
+  So you're a doc huh...<br>
+  In order to stay secure, we must be very strict about our Doctor sign up.  So we do not
   leave room for error.  You must provide a current, valid Medical Licence to proceed with registration. Thank you for understanding.<br><br>
   <%= form_for @doc do |f| %>
     <% if @doc.errors.any? %>
@@ -31,6 +32,7 @@
       <%= f.password_field :password_confirmation, placeholder: 'make it the match...' %>
     </div>
     <br>
+    <input type="checkbox" value="accept"> I'm not lying i swear....<br>
     <div class="actions"><%= f.submit "Register", class: "btn btn-md btn-primary" %></div>
   <% end %>
 </div>

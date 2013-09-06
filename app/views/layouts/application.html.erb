@@ -8,12 +8,12 @@
 </head>
 <body>
 <div class="top_bar">
-	<h3 class="pull-left"><a href="/">The Waiting Room</h3></a>
+	<h3 class="pull-left"><a style="text-decoration:none"href="/">The Waiting Room</h3></a>
 </div><br>
 <div class="pull-right menu">
 	<h4>Doctors Area</h4>
 	<% if current_doc %>
-			Logged in as <%= current_doc.name %>.<br>
+			Welcome Dr. <%= current_doc.name %>.<br>
 	<%= link_to "Log Out", logout_path %>
 <% else %>
   <%= link_to "Sign Up", signup_path %> or
