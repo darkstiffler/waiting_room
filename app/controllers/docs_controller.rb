@@ -15,7 +15,7 @@ def create
 end
 
 def doc_params
-	params.require(:doc).permit(:name, :password, :password_confirmation)
+	params.require(:doc).permit(:name, :password, :password_confirmation, :licence)
 end
 
 end
