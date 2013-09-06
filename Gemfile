@@ -17,7 +17,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery 
 gem 'jquery-rails'
 
-gem 'turbolinks'
+gem 'turbolinks'  #this gem sukx
 
 gem 'jbuilder', '~> 1.2'
 
