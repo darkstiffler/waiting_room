@@ -20,5 +20,8 @@ $(document).ready(function(){
 
 	$('footer').css({display: "none"});
 	$('footer').slideDown(900);
+
+	$('.menu').css({display: "none"});
+	$('.menu').fadeIn(2000);
 });
 

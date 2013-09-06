@@ -39,6 +39,11 @@ footer {
 	margin: 10px;
 	padding: 5px;
 	border: 1px blue solid;
+	-webkit-transition: all .5s ease-in-out;
+}
+.menu:hover {
+	-webkit-transform: rotate(5deg);
+	transform: rotate(2deg);
 }
 .box {
 	display: block;
