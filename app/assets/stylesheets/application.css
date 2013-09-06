@@ -22,15 +22,24 @@ body {
 }
 footer {
 	position: fixed;
-	background-color: black;
+	background-color: rgba(0,0,0, .6);
 	color: white;
-	bottom: 2px;
-	width: 100%;
-	padding: 10px;
-	border-radius: 10px;
-	left: 20px;
+	bottom: 0;
+	width: 80%;
+	padding: 1px;
+	border-radius: 0 10px 0 0;
 }
-
+.menu {
+	background-color: black;
+	border-radius: 5px;
+	position: absolute;
+	top: 1px;
+	right: 5px;
+	color:blue;
+	margin: 10px;
+	padding: 5px;
+	border: 1px blue solid;
+}
 .box {
 	display: block;
 	padding: 10px;
@@ -40,11 +49,11 @@ footer {
 	border-radius: 10px;
 	margin: 30px;
 }
-#top_bar {
-	border-radius: 0 0 5px 0;
+.top_bar {
+	border-radius: 0 0 18px 0;
 	padding: 5px;
 	height: 60px;
+	width: 300px;
 	background-color: black;
-	width: 90%;
 	margin-bottom: 20px;
 }

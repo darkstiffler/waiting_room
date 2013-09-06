@@ -7,23 +7,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div id="top_bar">
-	<h3 class="pull-left"><a href="/">The Waiting Room</h3>
-	<div class="pull-right">
-		<% if current_doc %>
- 			Logged in as <%= current_doc.name %>.<br>
-  	<%= link_to "Log Out", logout_path %>
-	<% else %>
-	  <%= link_to "Sign Up", signup_path %> or
-	  <%= link_to "Log In", login_path %>
-	<% end %>
-	</div>
+<div class="top_bar">
+	<h3 class="pull-left"><a href="/">The Waiting Room</h3></a>
+</div><br><br>
+<div class="pull-right menu">
+	<h4>Doctors Area</h4>
+	<% if current_doc %>
+			Logged in as <%= current_doc.name %>.<br>
+	<%= link_to "Log Out", logout_path %>
+<% else %>
+  <%= link_to "Sign Up", signup_path %> or
+  <%= link_to "Log In", login_path %>
+<% end %>
 </div>
 
 <%= yield %>
 
 <footer>
-	<p>&copy; Ethan G Stiffelman Development <a href="http://www.egsd.co">EGSD</a></p>
+	&copy; Ethan G Stiffelman Development <a href="http://www.egsd.co">EGSD</a>
 </footer>
 </body>
 </html>
