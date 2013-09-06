@@ -1,8 +1,10 @@
  <div class="box"> 
   <h1>Doc Sign Up</h1>
   So you're a doc huh...<br>
-  In order to stay secure, we must be very strict about our Doctor sign up.  So we do not
-  leave room for error.  You must provide a current, valid Medical Licence to proceed with registration. Thank you for understanding.<br><br>
+  In order to stay secure, we must be very strict about our Doctor sign up.  So we do not leave room for error.  You must provide a current, valid Medical Licence to proceed with registration. Thank you for understanding.
+  <br><br>
+  If your data is INCORRECT your data will be truncated upon submission.
+  <br><br>
   <%= form_for @doc do |f| %>
     <% if @doc.errors.any? %>
       <div class="error_messages">
@@ -29,10 +31,10 @@
     </div>
     <div class="field">
       <%= f.label :password_confirmation, "Password Confirmation" %><br />
-      <%= f.password_field :password_confirmation, placeholder: 'make it the match...' %>
+      <%= f.password_field :password_confirmation, placeholder: 'make it match...' %>
     </div>
     <br>
-    <input type="checkbox" value="accept"> I'm not lying i swear....<br>
+    <input type="checkbox" value="accept">i make u wrk l8tr, just check me..<br>
     <div class="actions"><%= f.submit "Register", class: "btn btn-md btn-primary" %></div>
   <% end %>
 </div>
