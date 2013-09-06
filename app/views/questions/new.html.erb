@@ -1,7 +1,7 @@
-<div id="new_q">	
+<div class="box">	
 	<%= form_for @question do |f| %>
-	<h2>Please, dont hesitate to ask!</h2>
-	<h4>Remember, nobody knows who you are!<br> this site is anonymous!</h4>
+	<h3>Please, dont hesitate to ask!</h3>
+	<h4>Remember, nobody knows who you are! This site is anonymous!</h4>
 	<br>
 	<div class="field">
 		<%= f.label :subject %>
@@ -14,6 +14,6 @@
 	</div>
 	<br>
 	<br>
-	<%= f.submit %>
+	<%= f.submit "Ask !", class:"btn btn-md btn-primary"%>
 	<% end %>
 </div>
