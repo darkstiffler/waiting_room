@@ -7,7 +7,6 @@ WaitingRoom::Application.routes.draw do
   get 'logout', to: 'sessions#destroy', as: 'logout'
 
   resources :docs
-  resources :doctors
   resources :users
   resources :sessions
   resources :questions
