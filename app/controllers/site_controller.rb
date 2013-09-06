@@ -6,4 +6,7 @@ class SiteController < ApplicationController
 	def welcome
 	end
 
+	def beta
+	end
+
 end
