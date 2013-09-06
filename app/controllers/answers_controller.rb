@@ -7,8 +7,12 @@ class AnswersController < ApplicationController
 	end
 
 	def create
-		answer = Answer.create answer_params
+		answer = Answer.new answer_params
+		answer.doc = current_doc if current_doc
+		answer.save!
+		
 		redirect_to question_path(answer.question)
+
 	end
 
 	def new

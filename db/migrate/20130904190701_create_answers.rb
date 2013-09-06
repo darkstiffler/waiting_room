@@ -4,6 +4,7 @@ class CreateAnswers < ActiveRecord::Migration
     	
       t.text :message
       t.text :from
+      t.references :doc
 
       t.timestamps
     end

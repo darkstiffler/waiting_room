@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20130905232246) do
   create_table "answers", force: true do |t|
     t.text     "message"
     t.text     "from"
+    t.integer  "doc_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "question_id"
@@ -27,20 +28,8 @@ ActiveRecord::Schema.define(version: 20130905232246) do
   create_table "docs", force: true do |t|
     t.string   "name"
     t.string   "licence"
+    t.boolean  "verified",        default: false
     t.string   "password_digest"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "doctors", force: true do |t|
-    t.string   "name"
-    t.integer  "age"
-    t.string   "location"
-    t.string   "licence"
-    t.string   "salt"
-    t.string   "fish"
-    t.string   "code"
-    t.datetime "expires_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

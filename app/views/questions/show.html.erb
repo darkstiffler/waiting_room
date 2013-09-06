@@ -6,8 +6,14 @@
 
 	<% @question.answers.each do |answer| %>
 
-	<p style="text-decoration: underline">From Nickname: <%= answer.from %></p>
-	<p><%= answer.message %></p>
+	<p style='color:blue'>Nickname- <%= answer.from %></p>
+	<p>
+	<%= answer.message %></p>
+	<% if answer.doc && answer.doc.verified %>
+	<span><img style="height:17px;width:auto;border-radius: 2px;"src="/assets/star.png"> Verified Doctor.</span>
+	<% else %>
+	<span style="color:red">This answer is from an UNVERIFIED source.</span>
+	<% end %>
 	<p style="color: green">Answered <%= time_ago_in_words answer.created_at %> ago.</p>
 	=======================
 	<% end %>
