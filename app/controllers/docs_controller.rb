@@ -4,8 +4,8 @@ def new
 end
 
 def destroy
-  	doc = Doc.find params[:id]
-   doc.destroy
+  	@doc = Doc.find params[:id]
+   @doc.destroy
 end
 
 def create
