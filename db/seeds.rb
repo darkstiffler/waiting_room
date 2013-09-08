@@ -14,22 +14,6 @@ Doc.create(
     licence: '1232345'
     })
 
-Doc.create(
-  {
-    name: 'doccrash',
-    password: 'tickle',
-    password_confirmation: 'tickle',
-    licence: '1345'
-    })
-
-Doc.create(
-  {
-    name: 'sdsdocthebest',
-    password: 'pickles',
-    password_confirmation: 'pickles',
-    licence: '543321'
-    })
-
 Question.create(
 	{
 		title: "my leg",
@@ -38,15 +22,15 @@ Question.create(
 Question.create(
   {
     title: "my arm",
-    body: "blblbllblb."
+    body: "my arm hurts above the elbow."
     })
 Question.create(
   {
     title: "my foot",
-    body: "the  best advice ever would go here if i was coool."
+    body: "the  foot, it stings."
     })
 Question.create(
   {
     title: "my eye",
-    body: "the  best advice ever would go here if i was coool."
+    body: "usless body text."
     })
