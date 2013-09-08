@@ -1,7 +1,11 @@
 class DocsController < ApplicationController
-
 def new
   @doc = Doc.new
+end
+
+def destroy
+  	doc = Doc.find params[:id]
+   doc.destroy
 end
 
 def create

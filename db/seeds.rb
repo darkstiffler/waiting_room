@@ -1,11 +1,18 @@
+# doc seeds (3)
 Doc.create(
   {
-    name: 'docflash',
-    password: 'tickle',
-    password_confirmation: 'tickle',
+    name: 'ethan',
+    password: '1',
+    password_confirmation: '1',
     licence: '12345'
     })
-
+Doc.create(
+  {
+    name: 'sarah',
+    password: 'pickle',
+    password_confirmation: 'pickle',
+    licence: '1920381'
+    })
 Doc.create(
   {
     name: 'docone',
@@ -13,6 +20,8 @@ Doc.create(
     password_confirmation: 'tickle',
     licence: '1232345'
     })
+
+# question seeds.
 
 Question.create(
 	{
@@ -39,6 +48,3 @@ Question.create(
     title: "my left eye",
     body: "more usless body text."
     })
-
-
-
