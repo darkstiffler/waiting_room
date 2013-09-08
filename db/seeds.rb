@@ -34,3 +34,11 @@ Question.create(
     title: "my eye",
     body: "usless body text."
     })
+Question.create(
+  {
+    title: "my left eye",
+    body: "more usless body text."
+    })
+
+
+
