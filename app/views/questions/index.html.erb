@@ -1,5 +1,6 @@
 <div class="box">	
 	<h1>The Questions Board</h1>
+	<%= link_to "Ask Another?", new_question_path, class: 'btn btn-lg btn-primary' %>
 	<div id="questions">
 		<% @questions.each do |q| %>
 		<h4><%= q.title %></h4>

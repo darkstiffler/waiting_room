@@ -35,6 +35,11 @@ Question.create(
     })
 Question.create(
   {
+    title: "another seed",
+    body: "this is just another seed :["
+    })
+Question.create(
+  {
     title: "my foot",
     body: "the  foot, it stings."
     })
