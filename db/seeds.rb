@@ -8,6 +8,26 @@ Doc.create(
     })
 Doc.create(
   {
+    name: 'gary',
+    password: '1',
+    password_confirmation: '1',
+    licence: '2810823'
+    })
+Doc.create({
+    name: 'carmen',
+    password: '1',
+    password_confirmation: '1',
+    licence: '291093'
+    })
+Doc.create(
+  {
+    name: 'lyssa',
+    password: '1',
+    password_confirmation: '1',
+    licence: '123995'
+    })
+Doc.create(
+  {
     name: 'sarah',
     password: 'pickle',
     password_confirmation: 'pickle',
@@ -46,7 +66,7 @@ Question.create(
 Question.create(
   {
     title: "my eye",
-    body: "usless body text."
+    body: "some, and then some more usless body text."
     })
 Question.create(
   {
