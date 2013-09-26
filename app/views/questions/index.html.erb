@@ -1,15 +1,14 @@
 <div class="box">	
 	<h1>The Questions Board</h1>
-	<%= link_to "Ask Another?", new_question_path, class: 'btn btn-lg btn-primary' %>
-	<div id="questions">
+	<%= link_to "Ask a question?", new_question_path, class: 'btn btn-lg btn-primary' %>
+	<div class="questions">
 		<% @questions.each do |q| %>
 		<h4><%= q.title %></h4>
 		<br>
 		<h5><%= q.body %></h5>
 		<br>
-		<%= link_to "View or Answer this question!", q, class: "btn btn-xs btn-primary" %>
-		<br>
-		<br>
+		<%= link_to "View or answer the above question!", q, class: "btn btn-xs btn-primary" %>
+		<br><br>
 		<% end %>
 	</div>
 </div>

@@ -1,5 +1,9 @@
 WaitingRoom::Application.routes.draw do
   
+  get "tutorial/one"
+  get "tutorial/two"
+  get "tutorial/three"
+  get "tutorial/four"
   root 'site#welcome'
 
   get 'beta', to: 'site#beta', as: 'beta'

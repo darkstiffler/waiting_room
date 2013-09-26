@@ -45,6 +45,11 @@ footer {
 .pull-right, .menu a:hover {
 	text-decoration: none;
 }
+input {
+	border-radius: 3px;
+	padding: 2px;
+	width: 200px;
+}
 .box {
 	display: block;
 	padding: 10px;
