@@ -1,4 +1,5 @@
 WaitingRoom::Application.routes.draw do
+  
   root 'site#welcome'
 
   get 'beta', to: 'site#beta', as: 'beta'
