@@ -1,8 +1,12 @@
 #tutorial_window {
-	background-color: rgba(255,255,255, 0.75);
+	background-color: rgba(255,255,255, 0.8);
 	width: 90%;
 	margin: 0 auto;
+	margin: 30px;
 	border-radius: 10px;
 	padding: 10px;
 	text-indent: 10px;
+}
+#tutorial_window p {
+	font-size: 16px;
 }

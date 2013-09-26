@@ -20,6 +20,9 @@ body {
 .answer {
 	border: 2px solid red;
 }
+#walkthrough_btn {
+	margin-bottom: 10px;
+}
 footer {
 	position: fixed;
 	background-color: rgba(0,0,0, .6);
@@ -48,7 +51,6 @@ footer {
 input {
 	border-radius: 3px;
 	padding: 2px;
-	width: 200px;
 }
 .box {
 	display: block;

@@ -1,5 +1,6 @@
 <div id="welcome" class="row">
 	<h2 class="center">Welcome to the Waiting Room!</h2>
+	<%= link_to "Take a walkthrough!", tutorial_one_path, id: 'walkthrough_btn', class:'btn btn-lg btn-danger'%>
 	<div class="col-sm-6">
 		<img id="welcome_img" src="http://www.robotplunger.com/wp-content/uploads/2011/06/trust-me-im-a-doctor.jpg" />
 	</div>
@@ -7,7 +8,7 @@
 		<h2>...but what are you?</h2>
 		<a href="/docs/new"><button type="button" class="btn btn-med btn-primary">Doctor</button></a>
 		<a href="/users/new"><button type="button" class="btn btn-med btn-primary">Patient</button></a>		
-		<a href="/questions/new"><button type="button" class="btn btn-med btn-primary">Skip</button></a>
+		<a href="/questions/new"><button type="button" class="btn btn-med btn-primary">Ask a quesion</button></a>
 		<br>
 		<br>
 		<p>Before we can answer any of your medical questions, we need to know what yer' doing here! If you select 'Doctor' you will be taken to the doctors registration page where a licence will be required. If you select 'Patient' you can get started right away!</p>
