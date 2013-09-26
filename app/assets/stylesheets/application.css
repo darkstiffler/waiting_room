@@ -42,7 +42,9 @@ footer {
 	margin: 0;
 	padding: 19px;
 }
-
+.pull-right, .menu a:hover {
+	text-decoration: none;
+}
 .box {
 	display: block;
 	padding: 10px;

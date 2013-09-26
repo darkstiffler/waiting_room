@@ -1,17 +1,17 @@
 <div class="box">
 	<h3>Hello new Patient</h3>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, assumenda, repellendus officia quis voluptates delectus fuga dicta dignissimos nemo atque incidunt id earum ut quidem iusto adipisci omnis ipsa beatae.</p>
+	<p>Welcome to the new patient registration page.  Since this application is still under development, we are NOT using this information for any functional reason. However, it does submit to the patient database.  Thank you for understanding! Enjoy!</p>
 
 	<%= form_for @user do |f| %>
 		<div class="row">
-				<%= f.label :nickname, "Nickname" %>
-				<%= f.text_field :name, placeholder:'Stivi Nikz...' %><br>
+				<%= f.label :nickname, "Nickname" %><br>
+				<%= f.text_field :name, placeholder:'Stevie Nicks...' %><br>
 				<br>
 				<%= f.label :age %><br>
 				<%= f.text_field :age, placeholder:'For accurate replies!' %><br>
 				<br>
 				<%= f.label :location%><br>
-				<%= f.text_field :location, placeholder:'Zimbobway...' %><br>
+				<%= f.text_field :location, placeholder:'Saturn...' %><br>
 				<br>
 				<%= f.submit "Enter Site", class:"btn btn-sm btn-primary" %>
 		</div>
