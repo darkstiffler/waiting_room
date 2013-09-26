@@ -1,2 +1,7 @@
-<h1>Tutorial#one</h1>
-<p>Find me in app/views/tutorial/one.html.erb</p>
+<div id="tutorial_window">
+	<h1>Welcome to the quick walk-through!</h1>
+	<h3>Simply click next, or skip back to the home page at any time.</h3>
+	<p>This application is meant to ease the worry caused when using the internet to ask personal questions.  By keeping all information optional, and annonymous, we allow our "patients" to ask worrysome, or personal questions without the hassle of going to a doctors office, or scouring the mass unreliable medical databases that are already out there, like WebMd...</p>
+	<%= link_to "Exit walk-through", root_path, class: 'btn btn-md btn-primary'%>
+	<%= link_to "Next", tutorial_two_path, class: 'btn btn-md btn-primary'%>
+</div>
