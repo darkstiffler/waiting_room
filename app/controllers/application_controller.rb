@@ -5,6 +5,8 @@ class ApplicationController < ActionController::Base
 
   private
 
+# authorization / authentication method w/ helper
+
 	def current_doc		
 	  @current_doc ||= Doc.find(session[:doc_id]) if session[:doc_id]
 	end

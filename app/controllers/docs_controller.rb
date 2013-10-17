@@ -1,8 +1,11 @@
 class DocsController < ApplicationController
+
+  # doc controller, allows creation of doc's with variables
 def new
   @doc = Doc.new
 end
 
+# kills 'x' doc that is found
 def destroy
   	@doc = Doc.find params[:id]
    @doc.destroy
